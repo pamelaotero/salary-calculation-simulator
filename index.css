@@ -1,0 +1,152 @@
+body{
+	/*background-image: url('background.png');*/
+	background-size: 100%;
+	background-repeat: no-repeat;
+	margin: 0px;
+	background-color:#0d8fcf;
+	color:white;
+}
+#calcular{
+	outline: none;
+}
+#logo-bemol{
+	width: 240px;
+	top: 15px;
+	left: 15px;
+	position: absolute;
+}
+#logo-xp{
+	width: 100px;
+	height: 100px;
+}
+.barra-bemol{
+	width: 100%;
+	height: 2vh;
+	background-size: 100%;
+	background-image: url('./src/barra-bemol.png');
+}
+.w3-container{
+	height: 98vh;
+	background-color: #0d8fcf;
+}
+#pessoa_azul{
+	background-image: url('./src/pessoa2.png');
+	background-size: 100% 100%;
+}
+#pessoa_vermelha{
+	background-image: url('./src/pessoa1.png');
+	background-size: 100% 110%;
+}
+#container_meio{
+	background-color: #0d8fcf;
+	padding: 0px;
+}
+#salario{
+	width: 80%;
+	font-size: 36px;
+	text-align:center;
+	border-radius: 15px;
+	outline: none;
+	margin: 5px;
+}
+#primeira-secao{
+	margin-top: 30px;
+}
+
+
+.opcoes{
+	width: 100%;
+	text-align: center;
+}
+.opcoes input{
+	-webkit-appearance: none;
+	-moz-appearance: none;
+	appearance: none;
+
+	border-radius: 50%;
+	width: 1.3em;
+	height: 1.3em;
+
+	border: 2px solid rgb(110, 110, 110);
+	transition: 0.2s all linear;
+	margin-right: 5px;
+
+	position: relative;
+	top: 1px;
+	outline: none;
+}
+.opcoes input:checked {
+    outline: none;
+    cursor: pointer;
+    border: 6px solid rgb(33, 182, 228);
+}
+.opcoes label {
+    margin-right: 15px;
+    line-height: 32px;
+    font-size: 1.4em; 
+    font-weight: bold;
+    cursor: pointer;
+}
+.input-segunda{
+	width: 80%;
+	color: black;
+	outline: none;
+	margin: 10px;
+	border:0px;
+	background-color: #e7e7e7;
+	border-radius: 15px;
+	text-align: center;
+	font-size: 32px;
+	padding: 5px;
+	font-weight: bold;
+}
+#refazer_calculo{
+	cursor: pointer;
+}
+/*@media screen and (max-width: 992px) {
+  body {
+    background-color: blue;
+  }
+}*/
+
+@media screen and (max-width: 800px) {
+  body {
+    background-color: #0d8fcf;
+	}
+  h1{
+  	font-size: 28px;
+  }
+  h2{
+  	font-size: 20px;
+  }
+  h3{
+  	font-size: 18px;
+ 		margin-top:15px!important;
+  }
+  h4{
+  	font-size: 14px;
+  }
+  h6,p{
+  	font-size: 12px;
+  	margin:5px!important;
+  }
+  .w3-half{
+  	width: 100%!important;
+  }
+  .opcoes{
+  	font-size: 10px;
+  }
+  .barra-bemol{
+  	height: 8px;
+	}
+	#container_meio{
+		padding: 25px;
+	}
+	#logo-bemol{
+		width: 60%;
+		position: static;
+	}
+  #pessoa_azul,#pessoa_vermelha{
+  	display: none;
+	}
+}
