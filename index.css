@@ -108,6 +108,7 @@ body{
 }
 #refazer_calculo{
 	cursor: pointer;
+	outline: none;
 }
 /*@media screen and (max-width: 992px) {
   body {
@@ -115,7 +116,7 @@ body{
   }
 }*/
 
-@media screen and (max-width: 800px) {
+@media screen and (max-width: 1000px) {
   body {
     background-color: #0d8fcf;
 	}
@@ -151,6 +152,9 @@ body{
 	#logo-bemol{
 		width: 60%;
 		position: static;
+	}
+	#refazer_calculo{
+		font-size: 28px;
 	}
   #pessoa_azul,#pessoa_vermelha{
   	display: none;

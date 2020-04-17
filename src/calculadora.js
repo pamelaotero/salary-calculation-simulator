@@ -1,11 +1,9 @@
 function reset(){
   document.getElementById('primeira-secao').hidden = false;
   document.getElementById('segunda-secao').hidden = true;
-  document.getElementById('salario').value = ""
   document.getElementById('salario_bemol').value = 0
   document.getElementById('valor_governo').value = 0
   document.getElementById('total').value = 0
-  document.getElementById('calcular').disabled = true; 
 
 }
 function verfSalario(){
@@ -40,6 +38,7 @@ function calc() {
     /*############################# 25% ###################################*/
 
     if (document.getElementById('radio_25').checked) {
+      var msg = 'para redução de 25%';
       salario = salario * 0.75
 
       valor_inss = retorna_inss(salario)
@@ -59,6 +58,7 @@ function calc() {
     /*############################# 50% ###################################*/
 
     if (document.getElementById('radio_50').checked) {
+      var msg = 'para redução de 50%';
       salario = salario * 0.50
 
       valor_inss = retorna_inss(salario)
@@ -77,6 +77,7 @@ function calc() {
     /*############################# 100% ###################################*/
 
     if (document.getElementById('radio_100').checked) {
+      var msg = 'no caso de suspensão';
       salario = salario * 0.30
 
       //SALARIO BEMOL
@@ -91,6 +92,7 @@ function calc() {
     document.getElementById('salario_bemol').value = "R$ " + salario_bemol.toFixed(2).replace(".", ",")
     document.getElementById('valor_governo').value = "R$ " + valor_governo.toFixed(2).replace(".", ",")
     document.getElementById('total').value = "R$ " + total.toFixed(2).replace(".", ",")
+    document.getElementById('mensagem').innerHTML = msg;
 } //fim da função
 
 
