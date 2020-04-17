@@ -1,3 +1,10 @@
+document.getElementById("salario").addEventListener("keyup", function(event) {
+  if (event.keyCode === 13) {
+	event.preventDefault();
+    	document.getElementById("calcular").click();
+	}
+});
+
 function reset(){
   document.getElementById('primeira-secao').hidden = false;
   document.getElementById('segunda-secao').hidden = true;
@@ -5,7 +12,6 @@ function reset(){
   document.getElementById('salario_bemol').value = 0
   document.getElementById('valor_governo').value = 0
   document.getElementById('total').value = 0
-  /* adicionei essa linha pam */
   document.getElementById('calcular').disabled = true; 
 
 }
@@ -13,8 +19,10 @@ function verfSalario(){
   var salario = parseFloat(document.getElementById('salario').value.replace("R$ ", "").replace(".", "").replace(",", "."));
   if (salario > 0.00) {
     document.getElementById('calcular').disabled = false;
+    return false
   }else{
     document.getElementById('calcular').disabled = true;
+    return true
   }
 }
 function calc() {
