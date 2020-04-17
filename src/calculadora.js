@@ -1,10 +1,3 @@
-document.getElementById("salario").addEventListener("keyup", function(event) {
-  if (event.keyCode === 13) {
-	event.preventDefault();
-    	document.getElementById("calcular").click();
-	}
-});
-
 function reset(){
   document.getElementById('primeira-secao').hidden = false;
   document.getElementById('segunda-secao').hidden = true;
@@ -16,6 +9,10 @@ function reset(){
 
 }
 function verfSalario(){
+  var keycode = (event.keyCode ? event.keyCode : event.which);
+    if(keycode == 13){
+      document.getElementById('calcular').click();
+    }	
   var salario = parseFloat(document.getElementById('salario').value.replace("R$ ", "").replace(".", "").replace(",", "."));
   if (salario > 0.00) {
     document.getElementById('calcular').disabled = false;
