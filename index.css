@@ -30,12 +30,18 @@ body{
 	background-color: #0d8fcf;
 }
 #pessoa_azul{
-	background-image: url('./src/pessoa2.png');
-	background-size: 100% 100%;
+	background-image: url('./src/2.png');
+	background-size: 100%;
+	background-repeat: no-repeat;
+	margin-top: 10%;
+	/* background-size: 100% 100%; */
 }
 #pessoa_vermelha{
-	background-image: url('./src/pessoa1.png');
-	background-size: 100% 110%;
+	background-image: url('./src/1.png');
+	background-size: 100%;
+	background-repeat: no-repeat;
+	margin-top: 10%;
+	/* background-size: 100% 110%; */
 }
 #container_meio{
 	background-color: #0d8fcf;

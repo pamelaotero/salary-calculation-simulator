@@ -5,6 +5,9 @@ function reset(){
   document.getElementById('salario_bemol').value = 0
   document.getElementById('valor_governo').value = 0
   document.getElementById('total').value = 0
+  /* adicionei essa linha pam */
+  document.getElementById('calcular').disabled = true; 
+
 }
 function verfSalario(){
   var salario = parseFloat(document.getElementById('salario').value.replace("R$ ", "").replace(".", "").replace(",", "."));
